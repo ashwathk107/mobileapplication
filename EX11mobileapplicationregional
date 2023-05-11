@@ -78,3 +78,85 @@ setLocale(lang);
 
     }
 }
+
+
+
+activity_main.xml:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayoutxmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<LinearLayout
+android:layout_width="409dp"
+android:layout_height="729dp"
+android:orientation="vertical"
+tools:layout_editor_absoluteX="1dp"
+tools:layout_editor_absoluteY="1dp">
+
+<EditText
+android:id="@+id/editTextTextPersonName"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:ems="10"
+android:inputType="textPersonName"
+android:text="@string/uname" />
+
+<EditText
+android:id="@+id/editTextTextPersonName2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:ems="10"
+android:inputType="textPersonName"
+android:text="@string/pwd" />
+
+<Button
+android:id="@+id/button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/cl" />
+
+<Button
+android:id="@+id/button2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/login" />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+String.xml:
+
+<resources>
+<string name="app_name">exe 11</string>
+<string name="uname">User name</string>
+<string name="pwd">Password</string>
+<string name="cl">Change Language</string>
+<string name="login">Login</string>
+</resources>
+
+
+ta/string.xml:
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">exe 11</string>
+<string name="uname">பயனர்பெயர்</string>
+<string name="pwd">கடவுச்சொல்</string>
+<string name="cl">மொழிமாற்றம்</string>
+<string name="login">உள்நுழைய</string>
+</resources>
+
+te/string.xml:
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">exe 11</string>
+<string name="uname">వినియోగదారు</string>
+<string name="pwd">పాస్వర్డ్</string>
+<string name="cl">భాషమార్చు</string>
+<string name="login">ప్రవేశించండి</string>
+</resources>
+
